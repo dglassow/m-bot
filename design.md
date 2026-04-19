@@ -48,6 +48,43 @@ evolves.
 - Storage: `SQLite` in `WAL` mode
 - Console UI: `rich`
 
+## Jay-Gentic Instruction Framework
+
+`m-bot` should include a dedicated Jay-Gentic instruction framework tuned for a
+local `31B` model.
+
+The canonical files are:
+
+- `.jay-gentic.md`
+- `docs/jay-gentic/system-prompt.md`
+- `docs/jay-gentic/operating-rules.md`
+- `docs/jay-gentic/task-routing.md`
+- `docs/jay-gentic/project-map.md`
+- `docs/jay-gentic/tuning-guide.md`
+
+### Framework Goals
+
+- keep default context small
+- route tasks to the minimum required docs
+- avoid overloading the local model with full architecture by default
+- make prompt tuning modular and auditable
+
+### Layering
+
+The framework should follow Jay-Gentic's context model:
+
+1. system prompt
+2. tier-1 always-loaded rules
+3. tier-2 expandable guidance
+4. tier-3 deep references
+
+### Operational Rule
+
+Tier 1 should remain short and stable.
+
+Deep architecture and reference material should stay in tier 2 or tier 3 unless
+there is a repeated failure mode that justifies promoting a rule upward.
+
 ## Notifications
 
 `m-bot` should send important operator alerts to Discord.
