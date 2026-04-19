@@ -9,7 +9,7 @@ It is intended to:
 - run multiple bots concurrently across multiple MWarfare universes
 - share persona behavior across universes
 - give each persona a rich backstory that shapes its decisions
-- use MWarfare's internal gameplay API for deterministic execution
+- use MWarfare's internal gameplay API as the only game-facing control surface
 - use a locally hosted `gemma4-heretic` model for high-level reasoning
 - maintain dossiers on observed players and rivals through LLM-assisted summaries
 - provide a local web dashboard showing what each bot is doing in real time
@@ -22,6 +22,10 @@ evolves.
 - Run about `25` bots concurrently.
 - Support at least `3` different universes.
 - Allow a single persona to operate across multiple universes.
+- Allow bots to read state and take actions exclusively through the available
+  internal API.
+- Do not allow bots to access MWarfare backend internals, database state,
+  private services, or privileged server-side execution paths directly.
 - Give every persona its own nationality, timezone, life details, habits, and
   traits that influence play style.
 - Allow personas to build and maintain opinions about other players and other
@@ -54,6 +58,28 @@ evolves.
 6. Build observability in from the start.
 7. Model social knowledge explicitly, not as loose prompt-only memory.
 8. Never expose bot-only meta-knowledge to in-universe reasoning.
+9. Treat the MWarfare internal API as the only allowed gameplay interface.
+
+## API-Only Access Rule
+
+Bots in `m-bot` must operate through the MWarfare internal API only.
+
+That means:
+
+- all reads come from documented API endpoints
+- all writes/actions go through documented API commands
+- local logic may combine, cache, interpret, and schedule API usage
+- LLM output may recommend actions, but execution still goes through the API
+
+Bots must not:
+
+- call private backend services directly
+- access MWarfare database state directly
+- rely on privileged in-process hooks
+- assume hidden server-side state that is not visible through the API
+
+This keeps the bot system realistic, portable, and aligned with the same
+capabilities available to a well-designed external automation client.
 
 ## High-Level Architecture
 
@@ -506,12 +532,18 @@ Current important API categories:
 - statistics
 - fleet actions
 
+The current bot-facing reference for these endpoints should live in:
+
+- `internal-api-reference.md`
+
 ### Integration Rules
 
 1. Treat MWarfare as the source of truth.
 2. Never let bot state drift from API-confirmed state.
 3. Always validate target and launch data before dispatch.
 4. Prefer stable internal API endpoints over scraping UI responses.
+5. Do not use any non-API backend shortcut, even if it would be technically
+   available locally.
 
 ## Persistence Model
 
