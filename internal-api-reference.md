@@ -545,3 +545,13 @@ When this file needs to be refreshed, verify against:
 
 This document is a bot-consumer mirror of the live MWarfare internal API
 contract, not an independent API design.
+
+## Related Local Operator Config
+
+Important `m-bot` operator alerts should use the locally stored Discord webhook
+defined through:
+
+- `MBOT_DISCORD_IMPORTANT_WEBHOOK`
+
+That notification channel is for runtime/operator alerts from `m-bot`, not for
+MWarfare gameplay requests themselves.

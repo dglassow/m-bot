@@ -48,6 +48,52 @@ evolves.
 - Storage: `SQLite` in `WAL` mode
 - Console UI: `rich`
 
+## Notifications
+
+`m-bot` should send important operator alerts to Discord.
+
+The current local webhook is provided through:
+
+- `MBOT_DISCORD_IMPORTANT_WEBHOOK`
+
+This secret should be stored locally in:
+
+- `secrets/.env.local`
+
+The raw webhook URL must not be copied into tracked docs or source files.
+
+### Important Notification Types
+
+Use this webhook for events such as:
+
+- worker crash loops
+- repeated MWarfare API failures
+- universe-wide auth or signing failures
+- prolonged local LLM outage
+- bot stuck states
+- safety-mode activation
+- severe economic or military anomalies
+- operator-required intervention
+
+### Notification Format
+
+Discord alerts should be:
+
+- short
+- severity-labeled
+- grouped by universe and bot
+- readable on desktop and mobile
+
+Each alert should ideally include:
+
+- severity
+- universe
+- bot id
+- persona
+- short issue summary
+- timestamp
+- recommended next step when relevant
+
 ## Core Design Principles
 
 1. Keep game logic deterministic in Python.
@@ -137,6 +183,7 @@ The database should store:
 - action logs
 - error logs
 - LLM requests
+- notification history
 - scheduling metadata
 
 ### 4. Local Dashboard
