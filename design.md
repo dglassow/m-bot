@@ -59,8 +59,11 @@ The canonical files are:
 - `docs/jay-gentic/system-prompt.md`
 - `docs/jay-gentic/operating-rules.md`
 - `docs/jay-gentic/task-routing.md`
+- `docs/jay-gentic/small-task-decomposition.md`
 - `docs/jay-gentic/project-map.md`
 - `docs/jay-gentic/tuning-guide.md`
+- `.jay-gentic/skills/`
+- `.jay-gentic/workflows/`
 
 ### Framework Goals
 
@@ -77,6 +80,46 @@ The framework should follow Jay-Gentic's context model:
 2. tier-1 always-loaded rules
 3. tier-2 expandable guidance
 4. tier-3 deep references
+
+### Skill Library
+
+`m-bot` should maintain a small project-local Jay-Gentic skill library under:
+
+- `.jay-gentic/skills/mwarfare-api-integration/`
+- `.jay-gentic/skills/dashboard-work/`
+- `.jay-gentic/skills/persona-dossier/`
+
+Each skill should follow this rule:
+
+- keep `SKILL.md` short and operational
+- move longer guidance into `Reference.md`
+- update the skill when a repeated task pattern changes
+
+### Workflow Templates
+
+`m-bot` should keep recurring task templates under:
+
+- `.jay-gentic/workflows/api-client-slice.md`
+- `.jay-gentic/workflows/dashboard-slice.md`
+- `.jay-gentic/workflows/persona-dossier-slice.md`
+
+These are not meant to replace design docs. They exist to help a local model
+convert a broad request into one small execution card.
+
+### Small-Task Decomposition Rule
+
+The default prompt discipline for Jay-Gentic should live in:
+
+- `docs/jay-gentic/small-task-decomposition.md`
+
+The framework should bias toward:
+
+- one outcome
+- one subsystem
+- one main change type
+- one focused validation step
+
+If a task cannot be expressed that way, it should be split before editing.
 
 ### Operational Rule
 

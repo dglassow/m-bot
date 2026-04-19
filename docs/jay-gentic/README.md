@@ -36,10 +36,33 @@ approach so the local model only gets what it needs for the current task.
   - hard constraints and execution rules
 - `task-routing.md`
   - how to classify and route work
+- `small-task-decomposition.md`
+  - standard prompt pattern for breaking work into local-model-safe slices
 - `project-map.md`
   - repo layout and where major components live
 - `tuning-guide.md`
   - how to keep prompts small and retune the framework safely
+- `.jay-gentic/skills/`
+  - project-local skill library for common m-bot task families
+- `.jay-gentic/workflows/`
+  - runnable workflow templates for recurring implementation slices
+
+## Current Skill Library
+
+- `mwarfare-api-integration`
+- `dashboard-work`
+- `persona-dossier`
+
+Keep `SKILL.md` short and put deeper detail in `Reference.md`.
+
+## Current Workflow Templates
+
+- `api-client-slice`
+- `dashboard-slice`
+- `persona-dossier-slice`
+
+These are meant to turn a broad request into one execution card that a local
+31B model can complete reliably.
 
 ## Operating Rules For This Framework
 
@@ -49,6 +72,7 @@ approach so the local model only gets what it needs for the current task.
 - Add examples only when the model actually needs them.
 - If a rule is needed often, move it upward one tier.
 - If a file becomes noisy or repetitive, split it.
+- If a task is broad, run the decomposition pattern before editing.
 
 ## Update Policy
 
@@ -58,3 +82,4 @@ Whenever `m-bot` architecture changes materially:
 - update `internal-api-reference.md` if the API contract changes
 - update the Jay-Gentic framework files if the model would need new routing or
   operating guidance
+- update the relevant skill or workflow if a repeated task pattern changes

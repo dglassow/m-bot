@@ -9,6 +9,9 @@ cross-cutting, or blocked without it.
 
 Tier 1 should stay enough for small implementation work.
 
+If a task is broad or touches multiple subsystems, open
+`docs/jay-gentic/small-task-decomposition.md` before planning edits.
+
 ## Task Types
 
 ### 1. Architecture / Planning
@@ -30,6 +33,7 @@ Use when:
 Open:
 
 - `internal-api-reference.md`
+- `.jay-gentic/skills/mwarfare-api-integration/SKILL.md`
 - `design.md` only if the integration changes architecture
 
 Use when:
@@ -59,6 +63,7 @@ Open:
 
 - `design.md`
 - `docs/jay-gentic/tuning-guide.md`
+- `.jay-gentic/skills/persona-dossier/SKILL.md`
 
 Use when:
 
@@ -72,6 +77,7 @@ Use when:
 Open:
 
 - `docs/jay-gentic/project-map.md`
+- `.jay-gentic/skills/dashboard-work/SKILL.md`
 - `design.md` if UI scope or operator workflow changes
 
 Use when:
@@ -85,5 +91,6 @@ Use when:
 Load:
 
 - `docs/jay-gentic/project-map.md`
+- `docs/jay-gentic/small-task-decomposition.md`
 
 Then decide whether deep architecture context is actually needed.

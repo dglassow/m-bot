@@ -60,6 +60,7 @@ When giving Jay-Gentic tasks:
 - specify the files to inspect
 - say what success looks like
 - avoid bundling unrelated work
+- use the decomposition template for anything larger than a small slice
 
 Prefer:
 
@@ -71,6 +72,20 @@ Avoid:
 
 - "build the whole system"
 - "review everything and improve it"
+
+## Default Decomposition Rule
+
+For a local 31B model, treat these as separate tasks unless there is a clear
+reason to combine them:
+
+- API client work
+- runtime worker logic
+- dashboard work
+- persona or dossier work
+- documentation-only work
+
+Use `docs/jay-gentic/small-task-decomposition.md` as the default format for
+turning a broad ask into a safe slice.
 
 ## When The Model Struggles
 
@@ -88,6 +103,7 @@ Corrective actions:
 3. move detail out of the prompt and into a referenced doc
 4. ask for a plan before asking for edits
 5. split architecture work from implementation work
+6. route the task through one matching workflow template if available
 
 ## Change Management
 
@@ -97,6 +113,7 @@ When tuning the framework:
 - do not expand tier 1 casually
 - record structural changes in `design.md` if they affect how the bot system is
   built or maintained
+- keep auto-loaded skills concise and move detail into `Reference.md`
 
 ## Rule Of Thumb
 
