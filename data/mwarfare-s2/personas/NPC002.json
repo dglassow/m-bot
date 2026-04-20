@@ -1,0 +1,63 @@
+{
+  "archetype": "fullTime",
+  "npc_key": "NPC002",
+  "persona": {
+    "background": {
+      "age_band": "adult",
+      "culture": "late-evening tactician",
+      "employment_status": "full_time",
+      "home_timezone": "Europe/Berlin",
+      "language_style": "direct",
+      "region": "Europe",
+      "school_status": "none"
+    },
+    "chat": {
+      "tone": "cool"
+    },
+    "identity": {
+      "display_name": "DarkNova"
+    },
+    "life_rhythm": {
+      "max_sessions_weekday": 2,
+      "max_sessions_weekend": 3,
+      "sleep_window": {
+        "end_local": "07:00",
+        "start_local": "23:45"
+      },
+      "typical_session_length_minutes": {
+        "max": 135,
+        "min": 60
+      }
+    },
+    "personality": {
+      "adaptability": 61,
+      "aggression": 63,
+      "discipline": 76,
+      "paranoia": 45,
+      "patience": 56,
+      "socialization": 49
+    },
+    "social": {
+      "alliance_identity": {
+        "name": "Black Meridian",
+        "tag": "MERID"
+      },
+      "alliance_interest": "measured"
+    }
+  },
+  "profile": {
+    "default_email": "npc-002@mwarfare.invalid",
+    "default_username": "DarkNova",
+    "is_enabled": true,
+    "legacy_aid": 2,
+    "npc_key": "NPC002",
+    "persona_s3_key": "shared/personas/npc002.yml"
+  },
+  "source": {
+    "commit": "257ea50849f472c3c0fb36f5bebd77f1a057834f",
+    "personas_path": "config/npc_personas.php",
+    "profiles_path": "config/npc_profiles.php",
+    "project": "MWarfare",
+    "ref": "s2"
+  }
+}

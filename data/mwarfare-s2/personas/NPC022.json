@@ -1,0 +1,63 @@
+{
+  "archetype": "fullTime",
+  "npc_key": "NPC022",
+  "persona": {
+    "background": {
+      "age_band": "adult",
+      "culture": "competitive online gamer",
+      "employment_status": "full_time",
+      "home_timezone": "America/Halifax",
+      "language_style": "direct",
+      "region": "North America",
+      "school_status": "none"
+    },
+    "chat": {
+      "tone": "cold"
+    },
+    "identity": {
+      "display_name": "Umbra King"
+    },
+    "life_rhythm": {
+      "max_sessions_weekday": 2,
+      "max_sessions_weekend": 3,
+      "sleep_window": {
+        "end_local": "07:00",
+        "start_local": "23:45"
+      },
+      "typical_session_length_minutes": {
+        "max": 135,
+        "min": 60
+      }
+    },
+    "personality": {
+      "adaptability": 58,
+      "aggression": 60,
+      "discipline": 74,
+      "paranoia": 45,
+      "patience": 63,
+      "socialization": 40
+    },
+    "social": {
+      "alliance_identity": {
+        "name": "Black Channel",
+        "tag": "BLKCHN"
+      },
+      "alliance_interest": "measured"
+    }
+  },
+  "profile": {
+    "default_email": "npc-022@mwarfare.invalid",
+    "default_username": "Umbra King",
+    "is_enabled": true,
+    "legacy_aid": 22,
+    "npc_key": "NPC022",
+    "persona_s3_key": "shared/personas/npc022.yml"
+  },
+  "source": {
+    "commit": "257ea50849f472c3c0fb36f5bebd77f1a057834f",
+    "personas_path": "config/npc_personas.php",
+    "profiles_path": "config/npc_profiles.php",
+    "project": "MWarfare",
+    "ref": "s2"
+  }
+}

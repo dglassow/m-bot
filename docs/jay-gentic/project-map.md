@@ -17,6 +17,8 @@ Planned major areas:
 
 - `mbot/api_client/`
   - MWarfare internal API client
+- `data/`
+  - imported MWarfare source data and future local authored seed data
 - `mbot/llm/`
   - local Gemma provider, prompt shaping, schemas
 - `mbot/persona/`
@@ -31,6 +33,8 @@ Planned major areas:
   - local web dashboard
 - `tests/`
   - unit/integration coverage
+- `tools/`
+  - importers, generators, and small maintenance utilities
 
 ## High-Level Data Concepts
 

@@ -1,0 +1,63 @@
+{
+  "archetype": "retired",
+  "npc_key": "NPC023",
+  "persona": {
+    "background": {
+      "age_band": "older_adult",
+      "culture": "methodical long-session player",
+      "employment_status": "retired",
+      "home_timezone": "Europe/Madrid",
+      "language_style": "measured",
+      "region": "Europe",
+      "school_status": "none"
+    },
+    "chat": {
+      "tone": "reserved"
+    },
+    "identity": {
+      "display_name": "The Watchman"
+    },
+    "life_rhythm": {
+      "max_sessions_weekday": 3,
+      "max_sessions_weekend": 4,
+      "sleep_window": {
+        "end_local": "06:15",
+        "start_local": "22:30"
+      },
+      "typical_session_length_minutes": {
+        "max": 210,
+        "min": 90
+      }
+    },
+    "personality": {
+      "adaptability": 54,
+      "aggression": 43,
+      "discipline": 86,
+      "paranoia": 50,
+      "patience": 83,
+      "socialization": 48
+    },
+    "social": {
+      "alliance_identity": {
+        "name": "Sentinel Row",
+        "tag": "SENROW"
+      },
+      "alliance_interest": "steady"
+    }
+  },
+  "profile": {
+    "default_email": "npc-023@mwarfare.invalid",
+    "default_username": "The Watchman",
+    "is_enabled": true,
+    "legacy_aid": 23,
+    "npc_key": "NPC023",
+    "persona_s3_key": "shared/personas/npc023.yml"
+  },
+  "source": {
+    "commit": "257ea50849f472c3c0fb36f5bebd77f1a057834f",
+    "personas_path": "config/npc_personas.php",
+    "profiles_path": "config/npc_profiles.php",
+    "project": "MWarfare",
+    "ref": "s2"
+  }
+}

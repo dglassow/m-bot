@@ -1,0 +1,34 @@
+{
+  "archetypes": {
+    "NPC000": "fullTime",
+    "NPC001": "partTime",
+    "NPC002": "fullTime",
+    "NPC003": "fullTime",
+    "NPC004": "fullTime",
+    "NPC005": "partTime",
+    "NPC006": "retired",
+    "NPC007": "student",
+    "NPC008": "partTime",
+    "NPC009": "fullTime",
+    "NPC010": "fullTime",
+    "NPC011": "student",
+    "NPC012": "fullTime",
+    "NPC013": "fullTime",
+    "NPC014": "retired",
+    "NPC015": "partTime",
+    "NPC016": "fullTime",
+    "NPC017": "retired",
+    "NPC018": "fullTime",
+    "NPC020": "fullTime",
+    "NPC021": "partTime",
+    "NPC022": "fullTime",
+    "NPC023": "retired",
+    "NPC024": "student"
+  },
+  "source": {
+    "commit": "257ea50849f472c3c0fb36f5bebd77f1a057834f",
+    "path": "config/npc_personas.php",
+    "project": "MWarfare",
+    "ref": "s2"
+  }
+}

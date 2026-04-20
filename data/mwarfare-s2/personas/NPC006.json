@@ -1,0 +1,63 @@
+{
+  "archetype": "retired",
+  "npc_key": "NPC006",
+  "persona": {
+    "background": {
+      "age_band": "older_adult",
+      "culture": "methodical long-session player",
+      "employment_status": "retired",
+      "home_timezone": "America/New_York",
+      "language_style": "measured",
+      "region": "North America",
+      "school_status": "none"
+    },
+    "chat": {
+      "tone": "measured"
+    },
+    "identity": {
+      "display_name": "Crimson King"
+    },
+    "life_rhythm": {
+      "max_sessions_weekday": 3,
+      "max_sessions_weekend": 4,
+      "sleep_window": {
+        "end_local": "06:15",
+        "start_local": "22:30"
+      },
+      "typical_session_length_minutes": {
+        "max": 210,
+        "min": 90
+      }
+    },
+    "personality": {
+      "adaptability": 54,
+      "aggression": 48,
+      "discipline": 79,
+      "paranoia": 50,
+      "patience": 78,
+      "socialization": 56
+    },
+    "social": {
+      "alliance_identity": {
+        "name": "Old Guard",
+        "tag": "OGUARD"
+      },
+      "alliance_interest": "steady"
+    }
+  },
+  "profile": {
+    "default_email": "npc-006@mwarfare.invalid",
+    "default_username": "Crimson King",
+    "is_enabled": true,
+    "legacy_aid": 6,
+    "npc_key": "NPC006",
+    "persona_s3_key": "shared/personas/npc006.yml"
+  },
+  "source": {
+    "commit": "257ea50849f472c3c0fb36f5bebd77f1a057834f",
+    "personas_path": "config/npc_personas.php",
+    "profiles_path": "config/npc_profiles.php",
+    "project": "MWarfare",
+    "ref": "s2"
+  }
+}

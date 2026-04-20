@@ -1,0 +1,63 @@
+{
+  "archetype": "fullTime",
+  "npc_key": "NPC020",
+  "persona": {
+    "background": {
+      "age_band": "adult",
+      "culture": "competitive online gamer",
+      "employment_status": "full_time",
+      "home_timezone": "Asia/Kolkata",
+      "language_style": "direct",
+      "region": "Asia-Pacific",
+      "school_status": "none"
+    },
+    "chat": {
+      "tone": "formal"
+    },
+    "identity": {
+      "display_name": "War Elephant"
+    },
+    "life_rhythm": {
+      "max_sessions_weekday": 2,
+      "max_sessions_weekend": 3,
+      "sleep_window": {
+        "end_local": "07:00",
+        "start_local": "23:45"
+      },
+      "typical_session_length_minutes": {
+        "max": 135,
+        "min": 60
+      }
+    },
+    "personality": {
+      "adaptability": 58,
+      "aggression": 65,
+      "discipline": 79,
+      "paranoia": 45,
+      "patience": 71,
+      "socialization": 36
+    },
+    "social": {
+      "alliance_identity": {
+        "name": "Monsoon Cartel",
+        "tag": "MONSUN"
+      },
+      "alliance_interest": "measured"
+    }
+  },
+  "profile": {
+    "default_email": "npc-020@mwarfare.invalid",
+    "default_username": "War Elephant",
+    "is_enabled": true,
+    "legacy_aid": 20,
+    "npc_key": "NPC020",
+    "persona_s3_key": "shared/personas/npc020.yml"
+  },
+  "source": {
+    "commit": "257ea50849f472c3c0fb36f5bebd77f1a057834f",
+    "personas_path": "config/npc_personas.php",
+    "profiles_path": "config/npc_profiles.php",
+    "project": "MWarfare",
+    "ref": "s2"
+  }
+}

@@ -48,6 +48,17 @@ evolves.
 - Storage: `SQLite` in `WAL` mode
 - Console UI: `rich`
 
+## Imported MWarfare Source Data
+
+`m-bot` should keep a local imported snapshot of the live MWarfare `s2` NPC
+roster and fallback persona data under:
+
+- `data/mwarfare-s2/`
+
+That dataset is a reference and seed source for `m-bot`, not a replacement for
+its own runtime state. The import should be generated from MWarfare source
+config so persona changes can be pulled forward cleanly.
+
 ## Jay-Gentic Instruction Framework
 
 `m-bot` should include a dedicated Jay-Gentic instruction framework tuned for a

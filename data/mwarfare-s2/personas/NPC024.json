@@ -1,0 +1,63 @@
+{
+  "archetype": "student",
+  "npc_key": "NPC024",
+  "persona": {
+    "background": {
+      "age_band": "young_adult",
+      "culture": "chaotic late-night chatter",
+      "employment_status": "part_time",
+      "home_timezone": "America/New_York",
+      "language_style": "playful",
+      "region": "North America",
+      "school_status": "college"
+    },
+    "chat": {
+      "tone": "snarky"
+    },
+    "identity": {
+      "display_name": "Spike"
+    },
+    "life_rhythm": {
+      "max_sessions_weekday": 3,
+      "max_sessions_weekend": 4,
+      "sleep_window": {
+        "end_local": "10:00",
+        "start_local": "02:30"
+      },
+      "typical_session_length_minutes": {
+        "max": 210,
+        "min": 90
+      }
+    },
+    "personality": {
+      "adaptability": 70,
+      "aggression": 58,
+      "discipline": 54,
+      "paranoia": 40,
+      "patience": 49,
+      "socialization": 83
+    },
+    "social": {
+      "alliance_identity": {
+        "name": "Night Arcade",
+        "tag": "NARCD"
+      },
+      "alliance_interest": "high"
+    }
+  },
+  "profile": {
+    "default_email": "npc-024@mwarfare.invalid",
+    "default_username": "Spike",
+    "is_enabled": true,
+    "legacy_aid": 24,
+    "npc_key": "NPC024",
+    "persona_s3_key": "shared/personas/npc024.yml"
+  },
+  "source": {
+    "commit": "257ea50849f472c3c0fb36f5bebd77f1a057834f",
+    "personas_path": "config/npc_personas.php",
+    "profiles_path": "config/npc_profiles.php",
+    "project": "MWarfare",
+    "ref": "s2"
+  }
+}

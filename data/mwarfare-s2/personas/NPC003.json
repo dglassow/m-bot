@@ -1,0 +1,63 @@
+{
+  "archetype": "fullTime",
+  "npc_key": "NPC003",
+  "persona": {
+    "background": {
+      "age_band": "adult",
+      "culture": "competitive online gamer",
+      "employment_status": "full_time",
+      "home_timezone": "America/Chicago",
+      "language_style": "direct",
+      "region": "North America",
+      "school_status": "none"
+    },
+    "chat": {
+      "tone": "practical"
+    },
+    "identity": {
+      "display_name": "Reese"
+    },
+    "life_rhythm": {
+      "max_sessions_weekday": 2,
+      "max_sessions_weekend": 3,
+      "sleep_window": {
+        "end_local": "07:00",
+        "start_local": "23:45"
+      },
+      "typical_session_length_minutes": {
+        "max": 135,
+        "min": 60
+      }
+    },
+    "personality": {
+      "adaptability": 58,
+      "aggression": 58,
+      "discipline": 71,
+      "paranoia": 45,
+      "patience": 56,
+      "socialization": 60
+    },
+    "social": {
+      "alliance_identity": {
+        "name": "Halcyon",
+        "tag": "HLINE"
+      },
+      "alliance_interest": "measured"
+    }
+  },
+  "profile": {
+    "default_email": "npc-003@mwarfare.invalid",
+    "default_username": "Reese",
+    "is_enabled": true,
+    "legacy_aid": 3,
+    "npc_key": "NPC003",
+    "persona_s3_key": "shared/personas/npc003.yml"
+  },
+  "source": {
+    "commit": "257ea50849f472c3c0fb36f5bebd77f1a057834f",
+    "personas_path": "config/npc_personas.php",
+    "profiles_path": "config/npc_profiles.php",
+    "project": "MWarfare",
+    "ref": "s2"
+  }
+}

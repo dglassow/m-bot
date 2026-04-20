@@ -1,0 +1,20 @@
+{
+  "archetype": null,
+  "npc_key": "NPC019",
+  "persona": null,
+  "profile": {
+    "default_email": "npc-019@mwarfare.invalid",
+    "default_username": "Eric",
+    "is_enabled": false,
+    "legacy_aid": 19,
+    "npc_key": "NPC019",
+    "persona_s3_key": "shared/personas/npc019.yml"
+  },
+  "source": {
+    "commit": "257ea50849f472c3c0fb36f5bebd77f1a057834f",
+    "personas_path": "config/npc_personas.php",
+    "profiles_path": "config/npc_profiles.php",
+    "project": "MWarfare",
+    "ref": "s2"
+  }
+}

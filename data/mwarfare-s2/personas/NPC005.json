@@ -1,0 +1,63 @@
+{
+  "archetype": "partTime",
+  "npc_key": "NPC005",
+  "persona": {
+    "background": {
+      "age_band": "adult",
+      "culture": "late-night strategy gamer",
+      "employment_status": "part_time",
+      "home_timezone": "Europe/London",
+      "language_style": "casual",
+      "region": "Europe",
+      "school_status": "none"
+    },
+    "chat": {
+      "tone": "sharp"
+    },
+    "identity": {
+      "display_name": "Lethal"
+    },
+    "life_rhythm": {
+      "max_sessions_weekday": 3,
+      "max_sessions_weekend": 4,
+      "sleep_window": {
+        "end_local": "08:30",
+        "start_local": "00:45"
+      },
+      "typical_session_length_minutes": {
+        "max": 165,
+        "min": 75
+      }
+    },
+    "personality": {
+      "adaptability": 64,
+      "aggression": 72,
+      "discipline": 61,
+      "paranoia": 43,
+      "patience": 51,
+      "socialization": 42
+    },
+    "social": {
+      "alliance_identity": {
+        "name": "Red Ledger",
+        "tag": "RLEDGR"
+      },
+      "alliance_interest": "open"
+    }
+  },
+  "profile": {
+    "default_email": "npc-005@mwarfare.invalid",
+    "default_username": "Lethal",
+    "is_enabled": true,
+    "legacy_aid": 5,
+    "npc_key": "NPC005",
+    "persona_s3_key": "shared/personas/npc005.yml"
+  },
+  "source": {
+    "commit": "257ea50849f472c3c0fb36f5bebd77f1a057834f",
+    "personas_path": "config/npc_personas.php",
+    "profiles_path": "config/npc_profiles.php",
+    "project": "MWarfare",
+    "ref": "s2"
+  }
+}
