@@ -79,7 +79,8 @@ These are meant to turn a broad request into one execution card that a local
 Whenever `m-bot` architecture changes materially:
 
 - update `design.md`
-- update `internal-api-reference.md` if the API contract changes
+- update `internal-api-reference.md` as the fast API pointer
+- update `docs/api/internal-api.md` if the API contract changes
 - update the Jay-Gentic framework files if the model would need new routing or
   operating guidance
 - update the relevant skill or workflow if a repeated task pattern changes

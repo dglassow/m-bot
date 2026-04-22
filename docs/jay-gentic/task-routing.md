@@ -33,6 +33,7 @@ Use when:
 Open:
 
 - `internal-api-reference.md`
+- `docs/api/internal-api.md`
 - `.jay-gentic/skills/mwarfare-api-integration/SKILL.md`
 - `design.md` only if the integration changes architecture
 
@@ -42,6 +43,7 @@ Use when:
 - wiring a new bot action
 - changing auth/signing behavior
 - updating endpoint assumptions
+- documenting a new MWarfare API route or action
 
 ### 3. Runtime / Worker Implementation
 

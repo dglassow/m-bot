@@ -43,5 +43,7 @@ When behavior or architecture changes, update the relevant docs in the same
 task:
 
 - `design.md` for architecture
-- `internal-api-reference.md` for MWarfare API usage
+- `internal-api-reference.md` as the API entry point
+- `docs/api/internal-api.md` whenever MWarfare API endpoints, payloads,
+  signing rules, or supported actions change
 - Jay-Gentic framework docs if prompt/routing behavior should change

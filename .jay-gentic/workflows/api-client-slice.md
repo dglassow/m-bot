@@ -9,6 +9,8 @@ printf '=== Repo State ===\n'
 git status --short --branch
 printf '\n=== API Reference Heads ===\n'
 sed -n '1,220p' internal-api-reference.md
+printf '\n=== Detailed API Catalog ===\n'
+sed -n '1,260p' docs/api/internal-api.md
 printf '\n=== Jay-Gentic Framework Files ===\n'
 find .jay-gentic -maxdepth 3 \\( -name 'SKILL.md' -o -name 'Reference.md' -o -path './.jay-gentic/workflows/*' \\) | sort
 ```

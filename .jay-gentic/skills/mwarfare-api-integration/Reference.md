@@ -27,7 +27,8 @@
 ## Contract Rules
 
 - Treat `internal-api-reference.md` as the bot-consumer source of truth.
-- If MWarfare changes the API contract, update the reference before using the new behavior.
+- Treat `docs/api/internal-api.md` as the detailed endpoint catalog.
+- If MWarfare changes the API contract, update both docs before using the new behavior.
 - When the contract is unclear, prefer documenting the gap over guessing.
 
 ## Typical Small Slice
