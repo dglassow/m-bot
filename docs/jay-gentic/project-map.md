@@ -7,7 +7,9 @@ This file should stay short. It exists to help the local model orient quickly.
 - `design.md`
   - full architecture and system intent
 - `internal-api-reference.md`
-  - MWarfare API surface available to bots
+  - fast entry point for MWarfare API work
+- `docs/api/internal-api.md`
+  - detailed MWarfare endpoint catalog, auth flow, and usage examples
 - `docs/jay-gentic/*`
   - prompt/routing/tuning framework for Jay-Gentic
 
